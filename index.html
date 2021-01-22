@@ -4,19 +4,34 @@
         <link rel="stylesheet" href="main.css">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
         <meta charset="utf-8" />
-        <title>Titre</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <title>Reservia</title>
     </head>
 
     <body>
-        <nav>
-            <img src="AudreyBelhoste_2_04012021/images/logo/Reservia.svg" alt="Logo Reservia">
-            <li>
-                <ul>Hébergements</ul>
-                <ul>Activités</ul>
-                <ul>S'inscrire</ul>
-            </li>
-        </nav>
+        <header class="mainHeader">
+            <nav class="mainNav">
+                <img class="logo" src="images/logo/Reservia.svg" alt="Logo Reservia">
+                <div class="mainNav__wrapper">
+                    <ul>
+                        <li><a>Hébergements</a></li>
+                        <li><a>Activités</a></li>
+                    </ul>
+                    <a href="#" class="signIn">S'inscrire</a>
+                </div>
+            </nav>
+        </header>
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+
+        <div class="search">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" class="searchTerm" placeholder="Marseille, France">
+            <button type="submit" class="searchButton">Rechercher</button>
+        </div>
     
     </body>
 </html>
