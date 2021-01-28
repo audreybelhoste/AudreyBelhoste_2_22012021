@@ -1,0 +1,104 @@
+.accommodationContainer{
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;    
+    max-width: 1320px; 
+    margin: auto;
+
+}
+
+.accommodation{
+    background-color: #F2F2F2;
+    padding: 15px 30px;
+    width: calc(65% - 15px);
+    border-radius: 25px;
+}
+
+.accommodation__wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.accommodation__card {
+    width: calc(33% - 15px);
+    background-color: white;
+    padding: 5px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.accommodation__card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.accommodation__picture{
+    height: 150px;
+    position: relative;
+    margin: 0;
+    border-radius: 25px 25px 0 0;
+    overflow: hidden;
+}
+
+.accommodation__picture>img{
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0; 
+    left: 0;
+}
+
+.accommodation__description{
+    padding: 10px;
+}
+
+.accommodation__description>h3{
+    margin: 0;
+}
+
+.accommodation__description>p{
+    margin: 5px 0;
+}
+
+.fa-star{
+    color: #0065FC;
+}
+
+.fa-star.fa-star--disabled{
+    color: #F2F2F2;
+}
+
+.showMore{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+@media only screen and (max-width : 1224px){
+    .accommodationContainer{
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .accommodation{
+        width: 100%;
+        border-radius: 0;
+        background-color: white;
+    }
+
+    .accommodation__card{
+        width: calc(50% - 15px);
+    }
+}
+
+@media only screen and (max-width : 640px){
+    .accommodation__card{
+        width: 100%;
+    }
+}
