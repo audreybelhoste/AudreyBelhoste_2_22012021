@@ -87,6 +87,13 @@
         display: flex;
         flex-wrap: wrap;
         height: auto;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .activity>h2{
+        max-width: 900px;
+        margin: 15px auto;
     }
 
     .activity__card{
