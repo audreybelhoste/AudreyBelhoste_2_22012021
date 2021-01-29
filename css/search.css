@@ -31,7 +31,7 @@ h1{
     cursor: pointer;
 }
 
-.searchButton>p{
+.searchButton>span{
     margin: 0;
 }
 
@@ -170,7 +170,7 @@ h1{
         margin-right: 0;
     }
 
-    .searchButton>p{
+    .searchButton>span{
         display: none;
     }
 
