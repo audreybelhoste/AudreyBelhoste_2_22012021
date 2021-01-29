@@ -1,16 +1,7 @@
-body {
-    font-family: 'Raleway', sans-serif; 
-    box-sizing: border-box;
-}
-
-* {
-    box-sizing: border-box;
-}
-
 .mainHeader{
     padding: 0 20px;
     max-width: 1320px; 
-    margin: auto;
+    margin: 0 auto 30px;
 }
 
 .mainNav{
@@ -26,7 +17,7 @@ ul, .mainNav__wrapper{
 }
 
 .mainNav__wrapper>ul>li{
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .mainNav__wrapper>ul>li>a{
@@ -63,7 +54,7 @@ li{
 
 .signIn{
     color: #0065FC;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
 }
 

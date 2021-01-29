@@ -11,7 +11,7 @@
     background-color: #F2F2F2;
     padding: 15px 30px;
     width: calc(65% - 15px);
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 .accommodation__wrapper{
@@ -24,7 +24,7 @@
     width: calc(33% - 15px);
     background-color: white;
     padding: 5px;
-    border-radius: 25px;
+    border-radius: 20px;
     margin-bottom: 30px;
     box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
     text-decoration: none;
@@ -38,10 +38,10 @@
 }
 
 .accommodation__picture{
-    height: 150px;
+    height: 110px;
     position: relative;
     margin: 0;
-    border-radius: 25px 25px 0 0;
+    border-radius: 20px 25px 0 0;
     overflow: hidden;
 }
 
@@ -63,11 +63,13 @@
 }
 
 .accommodation__description>p{
+    font-size: 14px;
     margin: 5px 0;
 }
 
 .fa-star{
     color: #0065FC;
+    font-size: 12px;
 }
 
 .fa-star.fa-star--disabled{
@@ -77,7 +79,11 @@
 .showMore{
     text-decoration: none;
     color: black;
-    font-weight: 600;
+    font-weight: 700;
+}
+
+.showMore:hover{
+    text-decoration: underline;
 }
 
 @media only screen and (max-width : 1224px){
@@ -90,6 +96,8 @@
         width: 100%;
         border-radius: 0;
         background-color: white;
+        max-width: 900px;
+        margin: 0 auto;
     }
 
     .accommodation__card{
@@ -98,7 +106,16 @@
 }
 
 @media only screen and (max-width : 640px){
+    .accommodation__wrapper{
+        margin-bottom: 15px;
+    }
+
     .accommodation__card{
         width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .accommodation{
+        max-width: 450px;
     }
 }

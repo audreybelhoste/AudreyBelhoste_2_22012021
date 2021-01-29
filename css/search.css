@@ -6,7 +6,7 @@
     
 h1{
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0;
 }
 
@@ -27,7 +27,7 @@ h1{
     padding: 15px;
     border-radius: 0 15px 15px 0;
     outline: none;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
 }
 
@@ -47,25 +47,25 @@ h1{
 
 .searchTerm{
     border: none;
-    border-top: solid 1px #F2F2F2;
-    border-bottom: solid 1px #F2F2F2;
+    border-top: solid 2px #F2F2F2;
+    border-bottom: solid 2px #F2F2F2;
     padding: 15px;
 }
 
 .searchTerm::placeholder{
     color: black;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .fa-info{
-    width: 20px;
-    height: 20px; 
+    width: 25px;
+    height: 25px; 
     text-align: center;
     vertical-align: middle;
     line-height: 20px;
     margin-right: 10px;
     color: #0065FC; 
-    border: solid 1px #F2F2F2;
+    border: solid 2px #F2F2F2;
     border-radius: 50%;
     font-size: 13px;
 }
@@ -73,7 +73,7 @@ h1{
 .filter__wrapper{
     display: flex;
     align-items: center;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .filter__items{
@@ -107,7 +107,7 @@ h1{
     width: 40px;
     height: 40px; 
     background-color: #DEEBFF;
-    border-radius: 25px;
+    border-radius: 20px;
     position: absolute;
     top: 0;
     left: 0;
@@ -125,7 +125,7 @@ h1{
     vertical-align: middle;
     line-height: 40px;
     margin: 0;
-    border: solid 1px #F2F2F2;
+    border: solid 2px #F2F2F2;
     padding: 0 10px 0 50px;
     border-radius: 20px;
     position: relative;
@@ -139,6 +139,16 @@ h1{
     color: black;
     border-radius: 20px;
     transition: all 0.3s ease;
+}
+
+.filter__infos{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.filter__infos>p{
+    margin: 0;
 }
 
 @media screen and (max-width: 850px) {
@@ -166,5 +176,9 @@ h1{
 
     .fa-search{ 
         display: block;
+    }
+
+    .filter__infos{
+        align-items: flex-start;
     }
 }

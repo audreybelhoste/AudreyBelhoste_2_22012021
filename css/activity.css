@@ -1,6 +1,6 @@
 .activity{
     max-width: 1320px; 
-    margin: auto;
+    margin: 70px auto;
     padding: 0 20px;
 }
 
@@ -8,12 +8,11 @@
     display: grid; 
     height: 500px;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 15px;
-    margin-bottom: 100px;
+    grid-gap: 30px;
 }
 
 .activity__card{
-    border-radius: 25px;
+    border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
     text-decoration: none;
@@ -100,6 +99,10 @@
 }
 
 @media only screen and (max-width : 640px){
+    .activity{
+        margin: 50px auto;
+    }
+
     .activity__card{
         width: 100%;
     }

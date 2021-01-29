@@ -1,5 +1,6 @@
 @import "normalize.css";
 @import "css/all.min.css";
+@import "base.css";
 @import "header.css";
 @import "search.css";
 @import "accommodation.css";
